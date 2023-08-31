@@ -1,0 +1,11 @@
+body {
+  background-color: #202020;
+}
+
+.sidebar {
+  background-color: #232323;
+  width: 380px;
+  height: 100vh;
+  padding: 12px;
+  box-sizing: border-box;
+}

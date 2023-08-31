@@ -1,0 +1,87 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.modal-delete {
+  width: 523px;
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #232323;
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.30);
+
+  position: relative;
+}
+
+.basket-big-img {
+  position: absolute;
+  margin-top: 44px;
+}
+
+.file-path {
+  position: absolute;
+  margin-top: 137px;
+
+  font-weight: 600;
+}
+
+.p {
+  position: absolute;
+  margin-top: 162px;
+
+  font-weight: 400;
+}
+
+.modal-delete-buttons {
+  position: absolute;
+  margin-top: 223px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.cancel-button, .delete-button {
+  display: flex;
+  width: 246px;
+  padding: 6px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cancel-button {
+  border-radius: 5px;
+  background: var(--neutral-grey-600, #393939);
+  color: var(--neutral-lightgrey-200, #CECECE);
+  font-weight: 400;
+}
+
+.delete-button {
+  border-radius: 5px;
+  background: var(--colors-red-600, #5E3838);
+  color: #DB5C5C;
+  font-weight: 600;
+}

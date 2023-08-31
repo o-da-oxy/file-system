@@ -1,0 +1,107 @@
+.folder {
+  color: #CECECE;
+}
+
+.folder-items-container {
+  display: flex;
+  padding: 0px 12px 0px 10px;
+  align-items: center;
+  gap: 14px;
+}
+
+.file-items-container {
+  display: flex;
+  padding: 0px 12px 0px 0px;
+  align-items: center;
+  gap: 14px;
+}
+
+.folder-item {
+  display: flex;
+  padding: 8px 0px;
+  align-items: center;
+  width: 100vh;
+  cursor: pointer;
+}
+
+.file-item {
+  margin: 0 -37px 0 16px;
+  display: flex;
+  padding: 8px 36px;
+  align-items: center;
+  gap: 6px;
+  width: 100vh;
+  cursor: pointer;
+}
+
+.subfolder-item {
+  margin-left: 16px;
+}
+
+.arrow-img {
+  width: 6px;
+  height: 8px;
+  padding: 4px;
+}
+
+.folder-img {
+  padding: 0 6px;
+}
+
+.button-basket, .button-dropdown {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: inherit;
+  margin-top: 105px;
+  margin-left: 230px;
+  display: flex;
+  padding: 10px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 3px;
+  background: #2C2C2C;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+  z-index: 9999;
+}
+
+.dropdown-menu span {
+  color: #CECECE;
+  padding-left: 8px;
+}
+
+div[data-active="true"] {
+  border-radius: 3px;
+  background: #343434;
+}
+
+.folder div[data-active="true"] ~ button {
+  display: inline-block;
+  position: relative;
+}
+
+.orange-rectangle[data-active="true"] {
+  width: 3px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #FFB800;
+  position: absolute;
+  margin-left: -10px;
+}
